@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🐾 Dog Trainer Landing Page
 
-## Getting Started
+Este projeto é uma landing page responsiva desenvolvida para um adestrador de cachorros, com o objetivo de destacar seus serviços e atrair novos clientes. A página foi cuidadosamente elaborada com Next.js e Tailwind CSS, seguindo o manual de marca fornecido pelo cliente. Todo o design, desde o protótipo até o guia de estilos, foi criado no Figma para garantir uma identidade visual coesa e atraente.
 
-First, run the development server:
+## 🚀 Tecnologias Utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Next.js**: Framework React para aplicações web rápidas e escaláveis.
+- **Tailwind CSS**: Biblioteca de utilitários CSS para estilização rápida e eficiente.
+- **Figma**: Ferramenta de design colaborativo para criação do layout e guia de estilos.
+  
+## 📋 Funcionalidades
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Design Responsivo**: A landing page adapta-se perfeitamente a dispositivos móveis, tablets e desktops.
+- **Seções Dinâmicas**: Inclui seções para apresentar serviços, depoimentos de clientes, e uma chamada para ação.
+- **SEO Otimizado**: Seguindo boas práticas para melhorar o ranking em motores de busca.
+- **Guia de Estilos**: O projeto segue rigorosamente o guia de estilos fornecido pelo cliente, mantendo a identidade visual consistente.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🎨 Design
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Todo o processo de design foi realizado no Figma, incluindo o protótipo interativo e o guia de estilos, que garante:
 
-## Learn More
+- **Tipografia**: Fontes e tamanhos definidos de acordo com a identidade da marca.
+- **Paleta de Cores**: Cores personalizadas de acordo com o manual de marca.
+- **Componentes Reutilizáveis**: Botões, formulários e seções reutilizáveis para futuras expansões do site.
+<br><br>
+Link do Figma: https://www.figma.com/design/eVXGQIzbaYmLoT8mnaQvvZ/Top-C%C3%A3es---Landing-Page?node-id=0-1&t=FGmBAdFUCXA0RKZw-1
 
-To learn more about Next.js, take a look at the following resources:
+## 📸 Screenshots
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+#### 🛠️ Em construção
+<br>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📦 Instalação e Execução
 
-## Deploy on Vercel
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/souzajv/Projeto-TopCaes.git
+2. Navegue até o diretório do projeto:
+   ```bash
+   cd Projeto-TopCaes
+3. Instale as dependências:
+   ```bash
+   npm i
+4. Execute o servidor de desenvolvimento:
+   ```bash
+   cd Projeto-TopCaes
+5. Acesse em seu navegador: http://localhost:3000
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+
+
