@@ -2,26 +2,94 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'JaliLatin';
+  src: url('/fonts/JaliLatin/JaliLatin-Regular.woff2') format('woff2'),
+    url('/fonts/JaliLatin/JaliLatin-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JaliLatin';
+  src: url('/fonts/JaliLatin/JaliLatin-Bold.woff2') format('woff2'),
+    url('/fonts/JaliLatin/JaliLatin-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JaliLatin';
+  src: url('/fonts/JaliLatin/JaliLatin-SemiBold.woff2') format('woff2'),
+    url('/fonts/JaliLatin/JaliLatin-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JaliLatin';
+  src: url('/fonts/JaliLatin/JaliLatin-Italic.woff2') format('woff2'),
+    url('/fonts/JaliLatin/JaliLatin-Italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'JaliLatin';
+  src: url('/fonts/JaliLatin/JaliLatin-Light.woff2') format('woff2'),
+    url('/fonts/JaliLatin/JaliLatin-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hind';
+  src: url('/fonts/Hind/Hind-Regular.woff2') format('woff2'),
+    url('/fonts/Hind/Hind-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hind';
+  src: url('/fonts/Hind/Hind-Bold.woff2') format('woff2'),
+    url('/fonts/Hind/Hind-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hind';
+  src: url('/fonts/Hind/Hind-SemiBold.woff2') format('woff2'),
+    url('/fonts/Hind/Hind-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hind';
+  src: url('/fonts/Hind/Hind-Medium.woff2') format('woff2'),
+    url('/fonts/Hind/Hind-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hind';
+  src: url('/fonts/Hind/Hind-Light.woff2') format('woff2'),
+    url('/fonts/Hind/Hind-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
 }
