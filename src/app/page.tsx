@@ -86,7 +86,7 @@ export default function Home() {
           <div className="flex items-center w-full">
             <LineTitle lineType='white' className='text-customWhite text-center text-3xl font-extrabold min-w-[188px]'>
               <h4 className='flex flex-col'>SOBRE NÓS
-                <span className='italic font-light text-lg'>"Quem sou eu?"</span>
+                <span className='italic font-light text-lg'>&quot;Quem sou eu?&quot;</span>
               </h4>
             </LineTitle>
           </div>
