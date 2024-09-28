@@ -15,11 +15,6 @@ const config: Config = {
         "customWhite": "#e0d9cb",
         "customYellow": "#E0aa38",
       },
-
-      fontFamily: {
-        titulos: ['JaliLatin', 'sans-serif'], 
-        textos: ['Hind', 'sans-serif'],       
-      },
     },
   },
   plugins: [],
