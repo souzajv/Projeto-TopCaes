@@ -42,7 +42,7 @@ function Carousel() {
                 }
             }
         ],
-        customPaging: i => (
+        customPaging: (i: number) => (
             <div></div>
         )
     };
