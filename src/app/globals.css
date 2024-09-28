@@ -14,3 +14,25 @@ html {
   padding: 0;
   width: 100%;
 }
+
+.slick-dots li button:before {
+  font-size: 0;
+}
+
+.slick-dots li div {
+  background-image: url('/assets/bola-amarela.png');
+  width: 30px;
+  height: 30px;
+  margin-top: 16px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.slick-dots li.slick-active div {
+  background-image: url('/assets/bola-vermelha.png') !important;
+}
+
+.slick-dots li {
+  margin: 0 12px !important;
+}

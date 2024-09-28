@@ -4,6 +4,7 @@ import Line from './components/line';
 import LineTitle from './components/lineTitle';
 import Services from './components/services';
 import Differences from './components/differences';
+import Carousel from './components/carousel';
 import Map from './components/map';
 import PreFooter from './components/preFooter';
 import Footer from './components/footer';
@@ -11,22 +12,19 @@ import Footer from './components/footer';
 export default function Home() {
   return (
     <main className="">
+
       <div id="first-section">
-        <div className="h-[660px] bg-customRed relative">
-          <div className="flex justify-center">
-            <Image src="/assets/Rodrigo-pastor-alemão.png" alt='foto do Rodrigo adestrando um pastor alemão' width={300} height={280} className='object-cover rounded-b-3xl z-10 h-[300px]' />
-          </div>
+        <div className="h-[96vh] bg-customRed relative">
           <div className="bg-customWhite h-28 w-full absolute top-0 z-0">
           </div>
-          <div className="flex overflow-hidden justify-between items-center">
+          <div className="flex justify-center h-[45vh]">
+            <Image src="/assets/Rodrigo-pastor-alemão.png" alt='foto do Rodrigo adestrando um pastor alemão' width={300} height={280} className='object-cover object-bottom rounded-b-3xl z-10 h-full w-[85%]' />
+          </div>
+          <div className="flex flex-col items-center justify-evenly h-[51vh]">
             <LineTitle lineType='white' className='w-full'>
-              <Image src='/assets/top-caes-logo-(letra-branca).png' alt='logo da TopCães' width={300} height={300} className='min-w-[150px]' />
+              <Image src='/assets/top-caes-logo-(letra-branca).png' alt='logo da TopCães' width={300} height={300} className='min-w-[200px]' />
             </LineTitle>
-          </div>
-          <div className="">
-            <h1 className="text-center text-3xl uppercase font-extrabold text-customWhite px-3">seu <span className="text-customBlack">cão</span> também merece <span className="text-customBlack">educação</span>!</h1>
-          </div>
-          <div className="flex items-center justify-center pt-10">
+            <h1 className="text-center text-4xl uppercase font-extrabold text-customWhite px-3">seu <span className="text-customBlack">cão</span> também merece <span className="text-customBlack">educação</span>!</h1>
             <Button
               href='#second-section'
               content='saiba mais'
@@ -69,16 +67,18 @@ export default function Home() {
           <Image src="/assets/top-caes-logo-(letra-preta).png" alt='imagem de um cachorro apoiado' width={60} height={60} className='absolute bottom-2 right-2' />
         </div>
       </div>
-      <div id="third-section" className='relative'>
-        <Image src='/assets/cachorro2.png' alt='imagem de um cachorro apoiado' width={135} height={135} className='absolute mt-[-114px] ml-4' />
-        <div className="bg-customBlack flex flex-col items-center justify-center h-[410px]">
-          <h3 className="uppercase font-extrabold text-customOrange text-3xl pb-14">como funciona?</h3>
-          <p className="capitalize font-bold text-customOrange text-xl pb-4">avaliação personalizada</p>
-          <p className='text-customWhite text-sm text-center pb-9 max-w-[285px]'>Entendemos seu cão a fundo através de uma avaliação presencial, para um treinamento sob medida para você e o seu cão.</p>
-          <Button
-            href='#'
-            content='contato'
-          />
+      <div id="third-section">
+        <div className="relative">
+          <Image src='/assets/cachorro2.png' alt='imagem de um cachorro apoiado' width={135} height={135} className='absolute mt-[-114px] ml-4' />
+          <div className="bg-customBlack flex flex-col items-center justify-center h-[410px]">
+            <h3 className="uppercase font-extrabold text-customOrange text-3xl pb-14">como funciona?</h3>
+            <p className="capitalize font-bold text-customOrange text-xl pb-4">avaliação personalizada</p>
+            <p className='text-customWhite text-sm text-center pb-9 max-w-[285px]'>Entendemos seu cão a fundo através de uma avaliação presencial, para um treinamento sob medida para você e o seu cão.</p>
+            <Button
+              href='#'
+              content='contato'
+            />
+          </div>
         </div>
       </div>
       <div id="fourth-section">
@@ -123,10 +123,14 @@ export default function Home() {
         </div>
       </div>
       <div id="fifth-section">
-        <div className="-[url('/assets/backgroundTextMobile.png')] bg-cover bg-center bg-no-repeat">
+        <div className="bg-[url('/assets/backgroundTextMobile.png')] bg-cover bg-center bg-no-repeat h-[450px] relative">
           <LineTitle lineType='red' className=''>
-            <h5 className="uppercase font-extrabold"></h5>
+            <h5 className="uppercase font-extrabold text-customRed text-3xl">nossos clientes</h5>
           </LineTitle>
+          <div className="flex items-center justify-center">
+            <Carousel />
+          </div>
+          <Image src='/assets/cachorro3.png' alt='imagem de um cachorro olhando para cima' width={100} height={100} className='absolute bottom-0 right-4' />
         </div>
       </div>
       <div id="sixth-section"
