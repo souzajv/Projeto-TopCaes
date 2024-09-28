@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Button from './components/button';
+import PrincipalButton from './components/principalButton';
 import Line from './components/line';
 import LineTitle from './components/lineTitle';
 import Services from './components/services';
@@ -14,21 +15,55 @@ export default function Home() {
     <main className="">
 
       <div id="first-section">
-        <div className="h-[96vh] bg-customRed relative">
-          <div className="bg-customWhite h-28 w-full absolute top-0 z-0">
+        <div className="h-[96vh] bg-customRed relative
+        lg:flex lg:flex-row-reverse">
+          <div className="lg:w-[50vw] lg:flex lg:flex-col-reverse lg:items-end">
+            <div className="bg-customWhite h-28 w-full absolute top-0 z-0
+            lg:w-[50%] lg:relative">
+            </div>
+            <div className="flex justify-center h-[45vh]
+            lg:h-[85vh] lg:w-full">
+              <Image src="/assets/Rodrigo-pastor-alemão.png" alt='foto do Rodrigo adestrando um pastor alemão' width={1000} height={1000} className='object-cover object-bottom rounded-b-3xl z-10 h-full w-[85%]
+              lg:w-full lg:rounded-none' />
+            </div>
           </div>
-          <div className="flex justify-center h-[45vh]">
-            <Image src="/assets/Rodrigo-pastor-alemão.png" alt='foto do Rodrigo adestrando um pastor alemão' width={300} height={280} className='object-cover object-bottom rounded-b-3xl z-10 h-full w-[85%]' />
-          </div>
-          <div className="flex flex-col items-center justify-evenly h-[51vh]">
-            <LineTitle lineType='white' className='w-full'>
-              <Image src='/assets/top-caes-logo-(letra-branca).png' alt='logo da TopCães' width={300} height={300} className='min-w-[200px]' />
-            </LineTitle>
-            <h1 className="text-center text-4xl uppercase font-extrabold text-customWhite px-3">seu <span className="text-customBlack">cão</span> também merece <span className="text-customBlack">educação</span>!</h1>
-            <Button
-              href='#second-section'
-              content='saiba mais'
-            />
+          <div className="flex flex-col items-center justify-evenly h-[51vh]
+          lg:items-start lg:justify-between lg:w-[50vw] lg:h-[96vh] lg:pl-8 lg:pt-8">
+            {/* versão mobile */}
+            <div className="lg:hidden h-md:mt-[-25px]">
+              <LineTitle lineType='white' className='w-full'>
+                <Image src='/assets/top-caes-logo-(letra-branca).png' alt='logo da TopCães' width={1000} height={1000} className='min-w-[130px] h-md:min-w-[180px] h-lg:min-w-[220px]' />
+              </LineTitle>
+            </div>
+            {/* versão desktop */}
+            <div className="hidden w-full
+            lg:block">
+              <div className="flex w-full items-center justify-between">
+                <Image src='/assets/top-caes-logo-(letra-branca).png' alt='logo da TopCães' width={1000} height={1000} className='w-[260px]' />
+                <Line type='white' className='min-w-full mt-8' />
+              </div>
+            </div>
+            <div className="flex flex-col items-center gap-12
+            lg:gap-0  lg:pb-20 lg:justify-evenly lg:h-full">
+              <h1 className="text-center text-4xl uppercase font-extrabold text-customWhite px-3 h-md:pb-0
+              lg:text-7xl lg:w-full">seu <span className="text-customBlack">cão</span> também merece <span className="text-customBlack">educação</span>!</h1>
+              {/* mobile */}
+              <div className="lg:hidden">
+                <Button
+                  className='hidden h-md:block'
+                  href='#second-section'
+                  content='saiba mais'
+                />
+              </div>
+              {/* desktop */}
+              <div className="hidden lg:block">
+                <PrincipalButton
+                  className='hidden lg:block'
+                  href='#second-section'
+                  content='saiba mais'
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -75,6 +110,7 @@ export default function Home() {
             <p className="capitalize font-bold text-customOrange text-xl pb-4">avaliação personalizada</p>
             <p className='text-customWhite text-sm text-center pb-9 max-w-[285px]'>Entendemos seu cão a fundo através de uma avaliação presencial, para um treinamento sob medida para você e o seu cão.</p>
             <Button
+              className=''
               href='#'
               content='contato'
             />
@@ -91,7 +127,7 @@ export default function Home() {
             </LineTitle>
           </div>
           <div className="flex flex-col items-center justify-center gap-6">
-            <Image src='/assets/rodrigo-sobre-nos.png' alt='foto do Rodrigo segurando uma coleira' width={300} height={300} className='rounded-3xl' />
+            <Image src='/assets/Rodrigo-sobre-nos.png' alt='foto do Rodrigo segurando uma coleira' width={300} height={300} className='rounded-3xl' />
             <p className="text-center text-customWhite text-base max-w-[330px]"> Fundada em [ano] por Rodrigo P. Alves, a Top Cães é fruto de mais de duas décadas de paixão e dedicação ao mundo canino. Com vasta experiência nacional e internacional, Rodrigo acumulou conhecimento em mais de 30 cursos e seminários, tornando-se referência em adestramento e comportamento canino.
               Na Top Cães, acreditamos que cada cão é único e merece um atendimento exclusivo. Nosso objetivo é fortalecer o vínculo entre você e seu companheiro, proporcionando uma convivência mais feliz e harmoniosa.</p>
           </div>
@@ -99,7 +135,7 @@ export default function Home() {
             <LineTitle lineType='white' className='uppercase font-bold text-customWhite text-3xl min-w-[203px]'>
               <p>diferenciais</p>
             </LineTitle>
-            <div className="flex flex-col justify-center items-center gap-12 pb-12">
+            <div className="flex flex-col justify-center items-center gap-12 pb-20">
               <Differences
                 image='/assets/cachorro-com-escudo.png'
                 alt='imagem de um cachorro cartoon com um escudo de fundo'
@@ -143,6 +179,7 @@ export default function Home() {
         </div>
         <Map className={`pb-10`} />
         <Button
+          className=''
           href='#'
           content='contato'
         />

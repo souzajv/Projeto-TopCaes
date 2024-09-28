@@ -15,6 +15,11 @@ const config: Config = {
         "customWhite": "#e0d9cb",
         "customYellow": "#E0aa38",
       },
+      screens: {
+        'h-sm': {'raw': '(min-height: 600px)'}, 
+        'h-md': {'raw': '(min-height: 800px)'}, 
+        'h-lg': {'raw': '(min-height: 930px)'}, 
+      },
     },
   },
   plugins: [],
