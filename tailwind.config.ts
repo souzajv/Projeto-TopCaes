@@ -19,6 +19,8 @@ const config: Config = {
         'h-sm': {'raw': '(min-height: 600px)'}, 
         'h-md': {'raw': '(min-height: 800px)'}, 
         'h-lg': {'raw': '(min-height: 930px)'}, 
+        '2xl': { 'min': '1535px' },
+        'lg': { 'min': '1440px' },
       },
     },
   },

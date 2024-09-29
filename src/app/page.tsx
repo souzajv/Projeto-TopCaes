@@ -16,39 +16,39 @@ export default function Home() {
 
       <div id="first-section">
         <div className="h-[96vh] bg-customRed relative
-        lg:flex lg:flex-row-reverse">
-          <div className="lg:w-[50vw] lg:flex lg:flex-col-reverse lg:items-end">
+        md:flex md:flex-row-reverse">
+          <div className="md:w-[50vw] md:flex md:flex-col-reverse md:items-end">
             <div className="bg-customWhite h-28 w-full absolute top-0 z-0
-            lg:w-[50%] lg:relative">
+            md:w-[50%] md:relative md:h-[11vh]">
             </div>
             <div className="flex justify-center h-[45vh]
-            lg:h-[85vh] lg:w-full">
+            md:h-[85vh] md:w-full">
               <Image src="/assets/Rodrigo-pastor-alemão.png" alt='foto do Rodrigo adestrando um pastor alemão' width={1000} height={1000} className='object-cover object-bottom rounded-b-3xl z-10 h-full w-[85%]
-              lg:w-full lg:rounded-none' />
+              md:w-full md:rounded-br-none' />
             </div>
           </div>
           <div className="flex flex-col items-center justify-evenly h-[51vh]
-          lg:items-start lg:justify-between lg:w-[50vw] lg:h-[96vh] lg:pl-8 lg:pt-8">
+          md:items-start md:justify-between md:w-[50vw] md:h-[96vh] md:pt-4">
             {/* versão mobile */}
-            <div className="lg:hidden h-md:mt-[-25px]">
+            <div className="md:hidden h-md:mt-[-25px]">
               <LineTitle lineType='white' className='w-full'>
                 <Image src='/assets/top-caes-logo-(letra-branca).png' alt='logo da TopCães' width={1000} height={1000} className='min-w-[130px] h-md:min-w-[180px] h-lg:min-w-[220px]' />
               </LineTitle>
             </div>
-            {/* versão desktop */}
+            {/* versão tablet/desktop */}
             <div className="hidden w-full
-            lg:block">
+            md:block">
               <div className="flex w-full items-center justify-between">
-                <Image src='/assets/top-caes-logo-(letra-branca).png' alt='logo da TopCães' width={1000} height={1000} className='w-[260px]' />
+                <Image src='/assets/top-caes-logo-(letra-branca).png' alt='logo da TopCães' width={1000} height={1000} className='w-[220px] md:pl-2' />
                 <Line type='white' className='min-w-full mt-8' />
               </div>
             </div>
             <div className="flex flex-col items-center gap-12
-            lg:gap-0  lg:pb-20 lg:justify-evenly lg:h-full">
+            md:gap-0  md:pb-20 md:justify-evenly md:h-full">
               <h1 className="text-center text-4xl uppercase font-extrabold text-customWhite px-3 h-md:pb-0
-              lg:text-7xl lg:w-full">seu <span className="text-customBlack">cão</span> também merece <span className="text-customBlack">educação</span>!</h1>
+              md:text-6xl md:w-full">seu <span className="text-customBlack">cão</span> também merece <span className="text-customBlack">educação</span>!</h1>
               {/* mobile */}
-              <div className="lg:hidden">
+              <div className="md:hidden">
                 <Button
                   className='hidden h-md:block'
                   href='#second-section'
@@ -56,9 +56,9 @@ export default function Home() {
                 />
               </div>
               {/* desktop */}
-              <div className="hidden lg:block">
+              <div className="hidden md:block">
                 <PrincipalButton
-                  className='hidden lg:block'
+                  className='hidden md:block'
                   href='#second-section'
                   content='saiba mais'
                 />
@@ -68,17 +68,25 @@ export default function Home() {
         </div>
       </div>
       <div id="second-section">
-        <div className="bg-customBlack h-[165px] flex flex-col items-center image-after relative">
-          <Image src='/assets/patinhas.png' alt='imagem de patinhas de cachorro' width={110} height={110} className='object-cover overflow-hidden absolute left-1 bottom-2' />
-          <h2 className="font-bold text-3xl text-customOrange uppercase mt-[55px]">serviços</h2>
+        <div className="bg-customBlack h-[165px] flex flex-col items-center image-after relative
+        md:min-h-[215px]">
+          <Image src='/assets/patinhas.png' alt='imagem de patinhas de cachorro' width={400} height={400} className='object-cover overflow-hidden absolute left-1 bottom-2 w-[115px]
+          md:w-40' />
+          <h2 className="font-bold text-3xl text-customOrange uppercase mt-14
+          md:text-5xl md:mt-16">
+            serviços</h2>
           <Line
             type='orange'
-            className='max-w-[200px] mt-[-65px]'
+            className='max-w-[200px] mt-[-65px]
+            md:max-w-[380px] '
           />
         </div>
-        <div className="bg-[url('/assets/backgroundTextMobile.png')] bg-cover bg-center bg-no-repeat h-[1150px] relative z-0">
-          <div className="mt-[-40px] absolute z-20 left-1/2 transform -translate-x-1/2">
-            <div className="flex flex-col gap-14">
+        <div className="bg-[url('/assets/backgroundTextMobile.png')] bg-cover bg-center bg-no-repeat h-[1150px] relative z-0
+        md:h-[450px]">
+          <div id="padrão" className="mt-[-40px] absolute z-20 left-1/2 transform -translate-x-1/2
+          md:mt-[-55px]">
+            <div id="cima" className="flex flex-col gap-14
+            md:flex-row md:gap-0 md:items-baseline md:justify-evenly md:min-w-[100vw]">
               <Services
                 title='treinamento comportamental'
                 text='Nosso treinamento comportamental é totalmente personalizado para atender às necessidades específicas do seu cão, promovendo uma relação harmoniosa e de confiança entre vocês.'
@@ -99,14 +107,21 @@ export default function Home() {
               />
             </div>
           </div>
-          <Image src="/assets/top-caes-logo-(letra-preta).png" alt='imagem de um cachorro apoiado' width={60} height={60} className='absolute bottom-2 right-2' />
+          <Image src="/assets/top-caes-logo-(letra-preta).png" alt='imagem de um cachorro apoiado' width={300} height={300} className='absolute bottom-2 right-2 max-w-20
+          md:max-w-24' />
         </div>
       </div>
       <div id="third-section">
         <div className="relative">
-          <Image src='/assets/cachorro2.png' alt='imagem de um cachorro apoiado' width={135} height={135} className='absolute mt-[-114px] ml-4' />
-          <div className="bg-customBlack flex flex-col items-center justify-center h-[410px]">
-            <h3 className="uppercase font-extrabold text-customOrange text-3xl pb-14">como funciona?</h3>
+          <Image src='/assets/cachorro2.png' alt='imagem de um cachorro apoiado' width={300} height={300} className='absolute mt-[-109px] max-w-32 ml-4
+          md:max-w-40 md:mt-[-136px] md:ml-10 md:z-10' />
+          <div className="bg-customBlack flex flex-col items-center justify-center h-[410px] 
+          md:relative md:z-0">
+            <div className="text-center w-full pb-14
+            md:text-start md:pl-10">
+              <h3 className="uppercase font-extrabold text-customOrange text-3xl 
+              md:text-4xl">como funciona?</h3>
+            </div>
             <p className="capitalize font-bold text-customOrange text-xl pb-4">avaliação personalizada</p>
             <p className='text-customWhite text-sm text-center pb-9 max-w-[285px]'>Entendemos seu cão a fundo através de uma avaliação presencial, para um treinamento sob medida para você e o seu cão.</p>
             <Button
@@ -114,6 +129,7 @@ export default function Home() {
               href='#'
               content='contato'
             />
+            <Image src='/assets/patinhas.png' alt='imagem de patinhas de cachorro cartoon' width={300} height={300} className='hidden md:block absolute right-2 transform -scale-x-100' />
           </div>
         </div>
       </div>
