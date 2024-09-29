@@ -134,42 +134,74 @@ export default function Home() {
         </div>
       </div>
       <div id="fourth-section">
-        <div className="bg-customRed flex flex-col items-center justify-center">
-          <div className="flex items-center w-full">
-            <LineTitle lineType='white' className='text-customWhite text-center text-3xl font-extrabold min-w-[188px]'>
-              <h4 className='flex flex-col'>SOBRE NÓS
-                <span className='italic font-light text-lg'>&quot;Quem sou eu?&quot;</span>
-              </h4>
-            </LineTitle>
+        <div className="bg-customRed flex flex-col items-center justify-center
+        lg:h-[900px] lg:flex-row lg:justify-between lg:items-start">
+          <div className="lg:w-[38vw] lg:h-[900px] w-full">
+            <div className="flex flex-col-reverse items-center w-full
+            lg:items-start">
+              <div className="hidden lg:block bg-customBlack h-[150px] w-[50%]"></div>
+              <Image src='/assets/Rodrigo-sobre-nos.png' alt='foto do Rodrigo segurando uma coleira' width={1000} height={1000} className='rounded-3xl mt-[-20px] pb-4 w-[80%]
+              md:max-w-[550px]
+              lg:w-full lg:mt-0 lg:pb-0 lg:rounded-t-none lg:rounded-bl-none lg:rounded-br-3xl lg:h-[750px]' />
+              {/* versão mobile */}
+              <div className="block lg:hidden w-full">
+                <LineTitle lineType='white' className='text-customWhite text-center min-w-[188px]'>
+                  <h4 className='flex flex-col text-3xl font-extrabold'>SOBRE NÓS
+                    <span className='italic font-light text-lg'>&quot;Quem sou eu?&quot;</span>
+                  </h4>
+                </LineTitle>
+              </div>
+            </div>
           </div>
-          <div className="flex flex-col items-center justify-center gap-6">
-            <Image src='/assets/Rodrigo-sobre-nos.png' alt='foto do Rodrigo segurando uma coleira' width={300} height={300} className='rounded-3xl' />
-            <p className="text-center text-customWhite text-base max-w-[330px]"> Fundada em [ano] por Rodrigo P. Alves, a Top Cães é fruto de mais de duas décadas de paixão e dedicação ao mundo canino. Com vasta experiência nacional e internacional, Rodrigo acumulou conhecimento em mais de 30 cursos e seminários, tornando-se referência em adestramento e comportamento canino.
-              Na Top Cães, acreditamos que cada cão é único e merece um atendimento exclusivo. Nosso objetivo é fortalecer o vínculo entre você e seu companheiro, proporcionando uma convivência mais feliz e harmoniosa.</p>
-          </div>
-          <div className="w-full">
-            <LineTitle lineType='white' className='uppercase font-bold text-customWhite text-3xl min-w-[203px]'>
-              <p>diferenciais</p>
-            </LineTitle>
-            <div className="flex flex-col justify-center items-center gap-12 pb-20">
-              <Differences
-                image='/assets/cachorro-com-escudo.png'
-                alt='imagem de um cachorro cartoon com um escudo de fundo'
-                title='Experiência e Expertise'
-                text='Mais de duas décadas de sucesso comprovado.'
-              />
-              <Differences
-                image='/assets/cachorro-com-coleira.png'
-                alt='imagem de um cachorro cartoon com uma coleira'
-                title='Atendimento Personalizado'
-                text='Cada cão é único e merece um plano de treinamento individualizado.'
-              />
-              <Differences
-                image='/assets/mão-com-coração.png'
-                alt='imagem cartoon de uma mão segurando um coração'
-                title='Amor e Dedicação'
-                text='Paixão genuína por transformar a vida dos cães e seus donos.'
-              />
+          <div className="lg:w-[62vw] w-full">
+            {/* versão desktop */}
+            <div className="hidden lg:block w-full">
+              <div className="flex items-center justify-between w-full">
+                <Line type='white' className='text-customWhite' />
+                <h4 className='flex flex-col text-4xl text-end text-customWhite font-extrabold min-w-[230px] mr-10'>SOBRE NÓS
+                  <span className='italic font-light text-3xl'>&quot;Quem sou eu?&quot;</span>
+                </h4>
+              </div>
+            </div>
+            <div className="flex flex-col items-center justify-center gap-6">
+              <p className="text-center text-customWhite text-base max-w-[80%]"> Fundada em [ano] por Rodrigo P. Alves, a Top Cães é fruto de mais de duas décadas de paixão e dedicação ao mundo canino. Com vasta experiência nacional e internacional, Rodrigo acumulou conhecimento em mais de 30 cursos e seminários, tornando-se referência em adestramento e comportamento canino.
+                Na Top Cães, acreditamos que cada cão é único e merece um atendimento exclusivo. Nosso objetivo é fortalecer o vínculo entre você e seu companheiro, proporcionando uma convivência mais feliz e harmoniosa.</p>
+            </div>
+            <div className="w-full">
+              {/* versão mobile */}
+              <div className="lg:hidden">
+                <LineTitle lineType='white' className='uppercase font-bold text-customWhite text-3xl min-w-[203px]'>
+                  <p>diferenciais</p>
+                </LineTitle>
+              </div>
+              {/* versão tablet/desktop */}
+              <div className="hidden lg:block w-full">
+                <div className="flex items-center justify-between w-full">
+                  <p className='flex flex-col text-4xl text-end text-customWhite font-bold uppercase ml-10 mr-2'>diferenciais</p>
+                  <Line type='white' className='text-customWhite' />
+                </div>
+              </div>
+              <div className="flex flex-col justify-center items-center gap-12 pb-20
+              md:flex-row md:justify-evenly">
+                <Differences
+                  image='/assets/cachorro-com-escudo.png'
+                  alt='imagem de um cachorro cartoon com um escudo de fundo'
+                  title='Experiência e Expertise'
+                  text='Mais de duas décadas de sucesso comprovado.'
+                />
+                <Differences
+                  image='/assets/cachorro-com-coleira.png'
+                  alt='imagem de um cachorro cartoon com uma coleira'
+                  title='Atendimento Personalizado'
+                  text='Cada cão é único e merece um plano de treinamento individualizado.'
+                />
+                <Differences
+                  image='/assets/mão-com-coração.png'
+                  alt='imagem cartoon de uma mão segurando um coração'
+                  title='Amor e Dedicação'
+                  text='Paixão genuína por transformar a vida dos cães e seus donos.'
+                />
+              </div>
             </div>
           </div>
         </div>
