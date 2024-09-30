@@ -12,8 +12,7 @@ import Footer from './components/footer';
 
 export default function Home() {
   return (
-    <main className="">
-
+    <main className="overflow-hidden">
       <div id="first-section">
         <div className="h-[96vh] bg-customRed relative
         md:flex md:flex-row-reverse">
@@ -138,16 +137,19 @@ export default function Home() {
         lg:h-[900px] lg:flex-row lg:justify-between lg:items-start">
           <div className="lg:w-[38vw] lg:h-[900px] w-full">
             <div className="flex flex-col-reverse items-center w-full
-            lg:items-start">
-              <div className="hidden lg:block bg-customBlack h-[150px] w-[50%]"></div>
-              <Image src='/assets/Rodrigo-sobre-nos.png' alt='foto do Rodrigo segurando uma coleira' width={1000} height={1000} className='rounded-3xl mt-[-20px] pb-4 w-[80%]
-              md:max-w-[550px]
-              lg:w-full lg:mt-0 lg:pb-0 lg:rounded-t-none lg:rounded-bl-none lg:rounded-br-3xl lg:h-[750px]' />
-              {/* versão mobile */}
+            lg:items-start lg:h-[900px]">
+              <div className="hidden lg:block bg-customBlack flex-grow w-[50%]"></div>
+              <Image src='/assets/Rodrigo-sobre-nos.png' alt='foto do Rodrigo segurando uma coleira' width={1000} height={1000} className='object-cover rounded-3xl mt-[-20px] pb-4 w-[80%]
+              md:max-w-[550px] md:mt-0
+              lg:min-w-[38vw] lg:mt-0 lg:pb-0 lg:rounded-t-none lg:rounded-bl-none lg:rounded-br-3xl lg:h-auto' />
+              {/* versão mobile/tablet */}
               <div className="block lg:hidden w-full">
-                <LineTitle lineType='white' className='text-customWhite text-center min-w-[188px]'>
-                  <h4 className='flex flex-col text-3xl font-extrabold'>SOBRE NÓS
-                    <span className='italic font-light text-lg'>&quot;Quem sou eu?&quot;</span>
+                <LineTitle lineType='white' className='text-customWhite text-center min-w-[188px]
+                md:min-w-[300px]'>
+                  <h4 className='flex flex-col text-3xl font-extrabold
+                  md:text-5xl'>SOBRE NÓS
+                    <span className='italic font-light text-lg
+                    md:text-3xl'>&quot;Quem sou eu?&quot;</span>
                   </h4>
                 </LineTitle>
               </div>
@@ -158,7 +160,7 @@ export default function Home() {
             <div className="hidden lg:block w-full">
               <div className="flex items-center justify-between w-full">
                 <Line type='white' className='text-customWhite' />
-                <h4 className='flex flex-col text-4xl text-end text-customWhite font-extrabold min-w-[230px] mr-10'>SOBRE NÓS
+                <h4 className='flex flex-col text-5xl text-end text-customWhite font-extrabold min-w-[300px] mr-10'>SOBRE NÓS
                   <span className='italic font-light text-3xl'>&quot;Quem sou eu?&quot;</span>
                 </h4>
               </div>
@@ -168,21 +170,23 @@ export default function Home() {
                 Na Top Cães, acreditamos que cada cão é único e merece um atendimento exclusivo. Nosso objetivo é fortalecer o vínculo entre você e seu companheiro, proporcionando uma convivência mais feliz e harmoniosa.</p>
             </div>
             <div className="w-full">
-              {/* versão mobile */}
+              {/* versão mobile/tablet */}
               <div className="lg:hidden">
-                <LineTitle lineType='white' className='uppercase font-bold text-customWhite text-3xl min-w-[203px]'>
+                <LineTitle lineType='white' className='uppercase font-bold text-customWhite text-center text-3xl min-w-[203px]
+                md:text-5xl md:mx-2 md:min-w-[340px]'>
                   <p>diferenciais</p>
                 </LineTitle>
               </div>
-              {/* versão tablet/desktop */}
+              {/* versão desktop */}
               <div className="hidden lg:block w-full">
                 <div className="flex items-center justify-between w-full">
-                  <p className='flex flex-col text-4xl text-end text-customWhite font-bold uppercase ml-10 mr-2'>diferenciais</p>
+                  <p className='flex flex-col text-5xl text-end text-customWhite font-bold uppercase ml-10 mr-2'>diferenciais</p>
                   <Line type='white' className='text-customWhite' />
                 </div>
               </div>
               <div className="flex flex-col justify-center items-center gap-12 pb-20
-              md:flex-row md:justify-evenly">
+              md:flex-row md:justify-evenly
+              lg:mx-4">
                 <Differences
                   image='/assets/cachorro-com-escudo.png'
                   alt='imagem de um cachorro cartoon com um escudo de fundo'
@@ -209,7 +213,8 @@ export default function Home() {
       <div id="fifth-section">
         <div className="bg-[url('/assets/backgroundTextMobile.png')] bg-cover bg-center bg-no-repeat h-[450px] relative">
           <LineTitle lineType='red' className=''>
-            <h5 className="uppercase font-extrabold text-customRed text-3xl">nossos clientes</h5>
+            <h5 className="uppercase font-extrabold text-customRed text-3xl
+            md:text-5xl md:w-[460px]">nossos clientes</h5>
           </LineTitle>
           <div className="flex items-center justify-center">
             <Carousel />
@@ -218,10 +223,13 @@ export default function Home() {
         </div>
       </div>
       <div id="sixth-section"
-        className="bg-[url('/assets/bonesBackground.png')] bg-cover bg-center bg-no-repeat flex flex-col items-center h-[570px]">
+        className="bg-[url('/assets/bonesBackground.png')] bg-cover bg-center bg-no-repeat flex flex-col items-center h-[600px]
+        md:h-[800px]">
         <div className="flex items-center justify-center gap-4 px-3 pt-5 pb-10">
-          <Image src="/assets/cachorro4.png" alt='Foto de um pastor alemão com o fundo laranja' width={86} height={84} className='' />
-          <h6 className="font-extrabold text-customOrange text-3xl text-start">
+          <Image src="/assets/cachorro4.png" alt='Foto de um pastor alemão com o fundo laranja' width={200} height={200} className='w-28
+          md:w-44' />
+          <h6 className="font-extrabold text-customOrange text-3xl text-start
+          md:text-5xl">
             ONDE ESTAMOS LOCALIZADOS?
           </h6>
         </div>
