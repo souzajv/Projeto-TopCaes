@@ -18,7 +18,7 @@ export default function Line(props: lineProps) {
     return (
         <div className={`relative h-40 w-full ${props.className || ''}`}>
             <div className="absolute inset-0 flex items-center justify-center">
-                <div className={`${lineColor()} w-full h-0.5`}></div>
+                <div className={`${lineColor()} w-full h-0.5 3xl:h-1.5`}></div>
             </div>
         </div>
     )
