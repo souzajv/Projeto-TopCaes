@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <main className="overflow-hidden">
       <div id="first-section">
-        <div className="h-[96vh] bg-customRed relative
+        <div className="h-[92vh] bg-customRed relative
         md:flex md:flex-row-reverse">
           <div className="md:w-[50vw] md:flex md:flex-col-reverse md:items-end">
             <div className="bg-customWhite h-28 w-full absolute top-0 z-0
@@ -29,9 +29,9 @@ export default function Home() {
           <div className="flex flex-col items-center justify-evenly h-[51vh]
           md:items-start md:justify-between md:w-[50vw] md:h-[96vh] md:pt-4">
             {/* versão mobile */}
-            <div className="md:hidden h-md:mt-[-25px]">
+            <div className="md:hidden mt-[-15px] h-md:mt-[-25px] h-lg:mt-[-55px]">
               <LineTitle lineType='white' className='w-full'>
-                <Image src='/assets/top-caes-logo-(letra-branca).png' alt='logo da TopCães' width={1000} height={1000} className='min-w-[130px] h-md:min-w-[180px] h-lg:min-w-[220px]' />
+                <Image src='/assets/top-caes-logo-(letra-branca).png' alt='logo da TopCães' width={1000} height={1000} className='min-w-[140px] h-md:min-w-[175px] h-lg:min-w-[185px]' />
               </LineTitle>
             </div>
             {/* versão tablet/desktop */}
@@ -46,14 +46,14 @@ export default function Home() {
             </div>
             <div className="flex flex-col items-center gap-12
             md:gap-0  md:pb-20 md:justify-evenly md:h-full">
-              <h1 className="text-center text-4xl uppercase font-extrabold text-customWhite px-3 h-md:pb-0
+              <h1 className="text-center text-4xl uppercase font-extrabold text-customWhite px-3 h-md:text-[30px] h-md:leading-8 h-md:pb-0 h-md:mt-[-18px] h-lg:mt-[-48px] h-lg:text-4xl
               md:text-6xl md:w-full
               2xl:text-7xl
               3xl:text-9xl">seu <span className="text-customBlack">cão</span> também merece <span className="text-customBlack">educação</span>!</h1>
               {/* mobile */}
               <div className="md:hidden">
                 <Button
-                  className='hidden h-md:block'
+                  className='hidden h-md:block h-md:mb-8'
                   href='#second-section'
                   content='saiba mais'
                 />

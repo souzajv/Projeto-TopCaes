@@ -18,7 +18,7 @@ const config: Config = {
       screens: {
         'h-sm': {'raw': '(min-height: 600px)'}, 
         'h-md': {'raw': '(min-height: 800px)'}, 
-        'h-lg': {'raw': '(min-height: 930px)'}, 
+        'h-lg': {'raw': '(min-height: 900px)'}, 
         '3xl': { 'min': '1900px' },
         '2xl': { 'min': '1440px' },
         'lg': {'min': '1024px'},
