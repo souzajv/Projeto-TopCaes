@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <main className="overflow-hidden">
       <div id="first-section">
-        <div className="h-[80vh] bg-customRed relative
+        <div className="h-[86vh] bg-customRed relative
         md:flex md:flex-row-reverse
         md:h-[95vh]">
           <div className="md:w-[50vw] md:flex md:flex-col-reverse md:items-end">
@@ -27,7 +27,7 @@ export default function Home() {
               md:w-full md:rounded-br-none' />
             </div>
           </div>
-          <div className="flex flex-col items-center justify-evenly h-[40vh]
+          <div className="flex flex-col items-center justify-evenly h-[46vh]
           md:items-start md:justify-between md:w-[50vw] md:h-[95vh] md:pt-4">
             {/* versão mobile */}
             <div className="md:hidden mt-[-15px] h-md:mt-[-58px] h-lg:mt-[-55px] h-md:py-5 h-lg:pb-6 h-lg:pt-4">
