@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <main className="overflow-hidden">
       <div id="first-section">
-        <div className="h-[80vh] bg-customRed relative
+        <div className="h-[86vh] bg-customRed relative
         md:flex md:flex-row-reverse
         md:h-[95vh]">
           <div className="md:w-[50vw] md:flex md:flex-col-reverse md:items-end">
@@ -27,10 +27,10 @@ export default function Home() {
               md:w-full md:rounded-br-none' />
             </div>
           </div>
-          <div className="flex flex-col items-center justify-evenly h-[40vh]
+          <div className="flex flex-col items-center justify-evenly h-[46vh]
           md:items-start md:justify-between md:w-[50vw] md:h-[95vh] md:pt-4">
             {/* versão mobile */}
-            <div className="md:hidden mt-[-15px] h-md:mt-[-58px] h-lg:mt-[-55px] h-md:py-5 h-lg:pb-6 h-lg:pt-4">
+            <div className="md:hidden mt-[-40px] h-md:mt-[-58px] h-lg:mt-[-55px] h-md:py-5 h-lg:pb-6 h-lg:pt-4">
               <LineTitle lineType='white' className='w-full'>
                 <Image src='/assets/top-caes-logo-(letra-branca).png' alt='logo da TopCães' width={1000} height={1000} className='min-w-[140px] h-md:min-w-[165px] h-lg:min-w-[180px]' />
               </LineTitle>
@@ -46,15 +46,15 @@ export default function Home() {
               </div>
             </div>
             <div className="flex flex-col items-center gap-12
-            md:gap-0  md:pb-20 md:justify-evenly md:h-full">
-              <h1 className="text-center text-3xl uppercase font-extrabold text-customWhite px-3 h-md:pb-0 h-md:mt-[-48px]
+            md:gap-0 md:pb-20 md:justify-evenly md:h-full">
+              <h1 className="text-center text-3xl uppercase font-extrabold text-customWhite px-3 mt-[-20px] h-md:pb-0 h-md:mt-[-48px]
               md:text-6xl md:w-full
               2xl:text-7xl
               3xl:text-9xl">seu <span className="text-customBlack">cão</span> também merece <span className="text-customBlack">educação</span>!</h1>
               {/* mobile */}
-              <div className="md:hidden h-md:mt-[-18px]">
+              <div className="md:hidden mt-[-14px] h-md:mt-[-18px] h-lg:mt-0">
                 <Button
-                  className='hidden h-md:block'
+                  className=''
                   href='#second-section'
                   content='saiba mais'
                 />
