@@ -54,7 +54,7 @@ export default function Home() {
               {/* mobile */}
               <div className="md:hidden h-md:mt-[-18px]">
                 <Button
-                  className='hidden h-md:block'
+                  className=''
                   href='#second-section'
                   content='saiba mais'
                 />
